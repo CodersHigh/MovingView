@@ -19,12 +19,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let viewSize = self.view.bounds.size
 
+        updateConstraints(viewSize)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func updateConstraints(size:CGSize) {
+        let startX = -size.width/3;
+        let startY = -size.height/3;
+
+        movingViewY.constant = startX
+        movingViewY.constant = startY
+    }
+    
     @IBAction func move(sender: AnyObject) {
         self.view.layoutIfNeeded()
         UIView.animateWithDuration(2.0, animations: {
