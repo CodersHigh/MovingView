@@ -26,7 +26,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func move(sender: AnyObject) {
-        
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(2.0, animations: {
+            self.movingViewX.constant = 230
+            self.movingViewY.constant = 222
+
+            self.movingView.backgroundColor = UIColor.blueColor()
+            self.movingView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4*3))
+
+            self.view.layoutIfNeeded()
+        })
     }
 
 }
