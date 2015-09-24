@@ -32,6 +32,9 @@
                                     <constraint firstAttribute="height" constant="30" id="pPI-BT-zn7"/>
                                 </constraints>
                                 <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ozi-If-ENC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -47,6 +50,7 @@
                     <connections>
                         <outlet property="destinationX" destination="sXT-8G-tyd" id="dFZ-Sb-EeW"/>
                         <outlet property="destinationY" destination="ulN-5r-Eyz" id="uH4-Lt-Akl"/>
+                        <outlet property="movingView" destination="Ndt-hM-Xir" id="1SH-gZ-EZH"/>
                         <outlet property="startX" destination="6ww-5p-GYY" id="yrK-7M-G3c"/>
                         <outlet property="startY" destination="MKy-qi-0xL" id="esg-CC-4FO"/>
                     </connections>

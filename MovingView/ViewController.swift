@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var movingView: UIView!
     
     @IBOutlet weak var startX: NSLayoutConstraint!
     @IBOutlet weak var startY: NSLayoutConstraint!
@@ -27,6 +28,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func move(sender: AnyObject) {
+        
+        self.view.layoutIfNeeded()
+        
+        UIView.animateWithDuration(2.0, animations: {
+            self.destinationX.priority = 750
+            self.destinationY.priority = 750
+            
+            self.movingView.backgroundColor = UIColor.blueColor()
+            self.movingView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4*3))
+
+            self.view.layoutIfNeeded()
+        })
+    }
 
 }
 
