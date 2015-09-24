@@ -37,15 +37,19 @@ class ViewController: UIViewController {
         let startX = -size.width/3;
         let startY = -size.height/3;
 
-        movingViewY.constant = startX
+        movingViewX.constant = startX
         movingViewY.constant = startY
+        
+        self.view.layoutIfNeeded()
     }
     
     @IBAction func move(sender: AnyObject) {
         self.view.layoutIfNeeded()
         UIView.animateWithDuration(2.0, animations: {
-            self.movingViewX.constant = 230
-            self.movingViewY.constant = 222
+            let viewSize = self.view.bounds.size
+            
+            self.movingViewX.constant = viewSize.width/3
+            self.movingViewY.constant = viewSize.height/3
 
             self.movingView.backgroundColor = UIColor.blueColor()
             self.movingView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4*3))
