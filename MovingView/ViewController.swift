@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        updateConstraints(size)
+    }
+    
     func updateConstraints(size:CGSize) {
         let startX = -size.width/3;
         let startY = -size.height/3;
