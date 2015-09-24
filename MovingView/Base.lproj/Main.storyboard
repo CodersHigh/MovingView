@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ndt-hM-Xir">
-                                <rect key="frame" x="20" y="28" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndt-hM-Xir">
+                                <rect key="frame" x="70" y="70" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.83996725080000001" green="0.1269445568" blue="0.1100263521" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mgC-dy-FAI"/>
@@ -35,7 +36,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ndt-hM-Xir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.2" priority="500" id="6ww-5p-GYY"/>
+                            <constraint firstItem="Ndt-hM-Xir" firstAttribute="centerY" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.2" priority="500" id="MKy-qi-0xL"/>
                             <constraint firstItem="dYE-8U-19h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RD6-Ma-Gap"/>
+                            <constraint firstItem="Ndt-hM-Xir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.8" priority="250" id="sXT-8G-tyd"/>
+                            <constraint firstItem="Ndt-hM-Xir" firstAttribute="centerY" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.8" priority="250" id="ulN-5r-Eyz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dYE-8U-19h" secondAttribute="bottom" constant="20" id="yN7-dN-vvY"/>
                         </constraints>
                     </view>
