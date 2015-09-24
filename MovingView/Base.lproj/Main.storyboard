@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="30" id="pPI-BT-zn7"/>
                                 </constraints>
                                 <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLq-IN-RyM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,6 +42,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dYE-8U-19h" secondAttribute="bottom" constant="20" id="yN7-dN-vvY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movingView" destination="Ndt-hM-Xir" id="4Vy-4E-Ria"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
