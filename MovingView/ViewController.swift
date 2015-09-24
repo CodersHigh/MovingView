@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var startX: NSLayoutConstraint!
+    @IBOutlet weak var startY: NSLayoutConstraint!
+    
+    @IBOutlet weak var destinationX: NSLayoutConstraint!
+    @IBOutlet weak var destinationY: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
