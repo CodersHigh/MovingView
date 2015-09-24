@@ -46,6 +46,8 @@
                     </view>
                     <connections>
                         <outlet property="movingView" destination="Ndt-hM-Xir" id="4Vy-4E-Ria"/>
+                        <outlet property="movingViewX" destination="5lt-Gc-tq2" id="Xe9-Hv-dsx"/>
+                        <outlet property="movingViewY" destination="VCe-YC-K8j" id="TX1-TB-gXT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

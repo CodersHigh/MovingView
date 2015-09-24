@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var movingView: UIView!
     
+    @IBOutlet weak var movingViewX: NSLayoutConstraint!
+    @IBOutlet weak var movingViewY: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
